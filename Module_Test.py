@@ -1,5 +1,5 @@
 #
-#        # # # # #
+#         # # # # #
 #       #           #
 #     #           #   #
 #   #             #   # #
@@ -80,4 +80,4 @@ import calendar
 from PyAstronomy import pyasl
 
 
-print("All modules are correctly installed!")
+print("All modules are correctly installed!\nPlease press ENTER key to close this window and end program.")
