@@ -3,8 +3,8 @@
 
 ![](DEATHSTAR_gif.gif)
 
-### Created by Gabrielle Ross
-### Last updated 2/19/2024
+### Created by: **Gabrielle Ross**
+### Last updated: **2/19/2024**
 
 Please see this **Google Doc** for the most up-to-date documentation: **[https://docs.google.com/document/d/1XhSLHx4Errv8sN3Wgqgwl7IM7kJosu0pbtIqBg6fUhQ/edit](https://docs.google.com/document/d/1XhSLHx4Errv8sN3Wgqgwl7IM7kJosu0pbtIqBg6fUhQ/edit)**
 
