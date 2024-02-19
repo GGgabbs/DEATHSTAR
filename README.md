@@ -1,7 +1,7 @@
 # DEATHSTAR
 ### A system for confirming planets and identifying false positive signals in TESS data using ground-based time domain surveys
 
-![](https://twitter.com/i/status/1735312169854779609);
+![](https://github.com/GGgabbs/DEATHSTAR/assets/54378752/a0b5359f-6adc-4b23-8dc4-d3cbabd6822d)
 
 ### Created by Gabrielle Ross
 ### Last updated 2/19/2024
