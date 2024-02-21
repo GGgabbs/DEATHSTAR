@@ -23,9 +23,8 @@
 #               false positive signals in TESS data using 
 #               ground-based time domain surveys
 #
-# Purpose:      Runs automatically along with setup.sh to ensure
-#               all dependencies are properly installed within
-#               the conda virtual environment DEATHSTAR_environment
+# Purpose:      Combines the Extracting_Lightcurves.py and
+#               Plotting.py files into one callable parent function
 
 
 
