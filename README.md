@@ -1,5 +1,5 @@
 # DEATHSTAR
-## <span style="text-decoration: underline">D</span>etecting and **E**valuating **A** **T**ransit: finding its **H**idden **S**ource in **T**ime-domain **A**rchival **R**ecords
+## __D__etecting and **E**valuating **A** **T**ransit: finding its **H**idden **S**ource in **T**ime-domain **A**rchival **R**ecords
 ### A system for confirming planets and identifying false positive signals in TESS data using ground-based time domain surveys
 
 ![](DEATHSTAR_gif.gif)
