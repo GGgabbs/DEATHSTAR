@@ -91,7 +91,7 @@ from PyAstronomy import pyasl
 
 # Private functions
 def vizier_query(mini_ra, mini_dec, mini_radius): # Query using Vizier to get the cone and all of the stars inside the cone
-    all_catalogs = Vizier.query_region(astropy.coordinates.SkyCoord(ra = mini_ra, dec = mini_dec, unit = (u.deg, u.deg)), radius = Angle(str(mini_radius) + "d"))
+    all_catalogs = Vizier(columns = ["all"], row_limit = 200).query_region(astropy.coordinates.SkyCoord(ra = mini_ra, dec = mini_dec, unit = (u.deg, u.deg)), radius = Angle(str(mini_radius) + "d"))
     
     if "IV/39/tic82" in list(all_catalogs.keys()): # TIC
         print("Using Vizier's TIC catalog...")
@@ -155,9 +155,7 @@ def tic_advanced_search_position_rows(mini_ra, mini_dec, mini_radius):
         dataframe = vizier_query(mini_ra, mini_dec, mini_radius)
         
         dataframe = pd.DataFrame(np.array(dataframe))
-        dataframe["ra"] = dataframe["RAJ2000"]
-        dataframe["dec"] = dataframe["DEJ2000"]
-        print(dataframe.head)
+        dataframe = pd.DataFrame({"ID": list(dataframe["TIC"]), "ra": list(dataframe["RAJ2000"]), "dec": list(dataframe["DEJ2000"]), "Tmag": list(dataframe["Tmag"]), "pmRA": list(dataframe["pmRA"]), "pmDEC": list(dataframe["pmDE"])})
     
     return dataframe
 
@@ -269,21 +267,26 @@ def get_brightness(fits_image, subarray_length, px, py, x0, sigma_x, y0, sigma_y
     
     positions_dataframe = pd.DataFrame(positions_dictionary)
     positions_dataframe["point"] = list(zip(positions_dataframe["px"], positions_dataframe["py"]))
-    
+    #print(list(positions_dataframe["px"]))
+    #hi
+    #print("1")
     aperture = EllipticalAperture(list(positions_dataframe["point"]), major_axis, minor_axis, theta = Angle(str(theta) + "d")) # Either takes Angle() or radians but Angle() was more accurate (takes in degrees rather than conversion)
+    #print("1.1")
     aperture_stats = ApertureStats(fits_image, aperture)
+    #print("1.2")
     aperture_area = aperture.area_overlap(fits_image)
+    #print("1.3")
     total_background = np.median(fits_image) * np.array(aperture_area)
-    
+    #print("2")
     if mini_is_ATLAS:
         sigma_clip = SigmaClip(sigma = 3, maxiters = 10)
         annulus = EllipticalAnnulus(list(positions_dataframe["point"]), (major_axis + 0.5 * major_axis), (major_axis + 0.5 * major_axis + major_axis * 1.5), (minor_axis + 0.5 * minor_axis), theta = Angle(str(theta) + "d"))
         annulus_stats = ApertureStats(fits_image, annulus, sigma_clip = sigma_clip)
         total_background = annulus_stats.median * aperture_stats.sum_aper_area.value
-    
+    #print("3")
     phot_table = aperture_photometry(fits_image, aperture)
     phot_background_subtraction = phot_table["aperture_sum"] - total_background
-    
+    #print("4")
     
     return np.array(phot_background_subtraction), np.array(aperture_stats.max)
 
