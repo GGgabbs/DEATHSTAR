@@ -294,9 +294,9 @@ def periodigram_ax(figure, mini_ax, toi_info, markersize = 6):
     top = 1.03
     bottom_int = int(toi_info["h"] * 100)
     
-    '''
     all_periods = []
     all_powers = []
+    '''
     for i in range(bottom_int - 5, bottom_int + 5):
         bottom = i / 100
         if bottom < 1:
