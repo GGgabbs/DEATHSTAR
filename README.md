@@ -27,4 +27,14 @@ Please **cite our paper** if you use this code: **[https://ui.adsabs.harvard.edu
 2. DEATHSTAR is a **complete pipeline** available on **[Github](https://github.com/GGgabbs/DEATHSTAR/tree/main)**
 
       Go to the GitHub page and download the code as a **.zip file**
-3. 
+3. **Unzip DEATHSTAR** and its contents:
+      Go to the GitHub page and download the code as a **.zip file**
+
+---
+
+## Planet Murder with DEATHSTAR:
+
+1. BLAH
+
+
+---
