@@ -38,8 +38,8 @@ Please **cite our paper** if you use this code: **[https://ui.adsabs.harvard.edu
      Activate the DEATHSTAR environment using `conda activate DEATHSTAR`
      **Install dependencies** using:
 
-          `pip install ztfquery`
-          `pip3 install pandas astropy astroquery photutils pyastronomy fpdf ipython notebook`
+      `pip install ztfquery`
+      `pip3 install pandas astropy astroquery photutils pyastronomy fpdf ipython notebook`
      If your program uses **additional dependencies**, use `pip3 install [PACKAGE NAME]` to install them
 5. Logins and accounts for datasets:
 
