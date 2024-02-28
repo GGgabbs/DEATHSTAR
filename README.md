@@ -36,10 +36,7 @@ Please **cite our paper** if you use this code: **[https://ui.adsabs.harvard.edu
      Open your **Anaconda Prompt** (for Windows) or **Terminal** (for Mac). This is important because this is what has conda installed
      Type in and run `conda create -n DEATHSTAR python=3.9.15 numpy matplotlib scipy` in your Anaconda Prompt/ Terminal to create the environment
      Activate the DEATHSTAR environment using `conda activate DEATHSTAR`
-     **Install dependencies** using:
-
-      `pip install ztfquery`
-      `pip3 install pandas astropy astroquery photutils pyastronomy fpdf ipython notebook`
+     **Install dependencies** using `pip install ztfquery` and then subsequently `pip3 install pandas astropy astroquery photutils pyastronomy fpdf ipython notebook`
      If your program uses **additional dependencies**, use `pip3 install [PACKAGE NAME]` to install them
 5. Logins and accounts for datasets:
 
@@ -48,11 +45,16 @@ Please **cite our paper** if you use this code: **[https://ui.adsabs.harvard.edu
 
      Navigate to the DEATHSTAR project folder (wherever you have extracted it) within your anaconda prompt using `cd [FOLDER NAME]` and replace `[FOLDER NAME]` with your own directory name
      Test package installation with the download program `Test.py` using `python Test.py` OR `python3 Test.py`
+   
      **Note:** If you get an error saying `there is no fpdf module`, deactivate the DEATHSTAR conda environment using `conda deactivate`, install fpdf using `pip install fpdf` (which installs in general conda base environment), then reactivate DEATHSTAR using `conda activate DEATHSTAR` and then rerun `python Test.py` OR `python3 Test.py`
+   
      This will prompt you to fill in your ZTF login information you just created. Then the program will go through the full extracting and plotting process in 1 go as a complete pipeline example
      In order to view example outputs, open a new Anaconda Prompt (or normal Terminal on Mac) via navigating to the project folder using `cd [FOLDER NAME]` and then activating the DEATHSTAR conda environment using `conda activate DEATHSTAR`
+   
      Open the DEATHSTAR_Example.ipynb using the following command `jupyter notebook`
+   
      Go to the browser where the Jupyter notebook has opened and open the .ipynb file
+   
      **Note:** Jupyter will open in the browser window that you last used!
 
 ### Now this battle station is fully operational!
