@@ -25,6 +25,5 @@ Please **cite our paper** if you use this code: **[https://ui.adsabs.harvard.edu
 
 1. **Install [Anaconda](https://www.anaconda.com/download)** on your computer as this package and its dependencies will be installed inside of a conda environment
 2. DEATHSTAR is a **complete pipeline** available on **[Github](https://github.com/GGgabbs/DEATHSTAR/tree/main)**
-
-   ...Go to the GitHub page and download the code as a **.zip file**
-4. 
+      Go to the GitHub page and download the code as a **.zip file**
+3. 
