@@ -28,7 +28,20 @@ Please **cite our paper** if you use this code: **[https://ui.adsabs.harvard.edu
 
       Go to the GitHub page and download the code as a **.zip file**
 3. **Unzip DEATHSTAR** and its contents:
-      Go to the GitHub page and download the code as a **.zip file**
+
+     Unzip and extract the files wherever your project’s code is on your computer. This means that they need to share the same directory when running your own code (or change the path)!
+     You will either be able to run DEATHSTAR in **your own .py file** as shown in the example **jupyter notebook**.
+4. Creating the **conda environment** and **installing dependencies**:
+
+     Open your **Anaconda Prompt** (for Windows) or **Terminal** (for Mac). This is important because this is what has conda installed
+     Type in and run `conda create -n DEATHSTAR python=3.9.15 numpy matplotlib scipy` in your Anaconda Prompt/ Terminal to create the environment
+     Activate the DEATHSTAR environment using `conda activate DEATHSTAR`
+     **Install dependencies** using:
+
+          `pip install ztfquery`
+          `pip3 install pandas astropy astroquery photutils pyastronomy fpdf ipython notebook`
+     If your program uses **additional dependencies**, use `pip3 install [PACKAGE NAME]` to install them
+5. Logins and accounts for datasets:
 
 ---
 
