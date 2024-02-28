@@ -1,4 +1,4 @@
-[clickable=false]# DEATHSTAR
+# DEATHSTAR
 ## **D**etecting and **E**valuating **A** **T**ransit: finding its **H**idden **S**ource in **T**ime-domain **A**rchival **R**ecords
 ### A system for confirming planets and identifying false positive signals in TESS data using ground-based time domain surveys
 
@@ -25,5 +25,6 @@ Please **cite our paper** if you use this code: **[https://ui.adsabs.harvard.edu
 
 1. **Install [Anaconda](https://www.anaconda.com/download)** on your computer as this package and its dependencies will be installed inside of a conda environment
 2. DEATHSTAR is a **complete pipeline** available on **[Github](https://github.com/GGgabbs/DEATHSTAR/tree/main)**
-  ...Go to the GitHub page and download the code as a **.zip file**
-3. 
+
+   ...Go to the GitHub page and download the code as a **.zip file**
+4. 
