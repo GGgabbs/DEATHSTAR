@@ -2,7 +2,7 @@
 ## **D**etecting and **E**valuating **A** **T**ransit: finding its **H**idden **S**ource in **T**ime-domain **A**rchival **R**ecords
 ### A system for confirming planets and identifying false positive signals in TESS data using ground-based time domain surveys
 
-![](DEATHSTAR_gif.gif)
+![](README_Assets/DEATHSTAR_gif.gif)
 
 ### Created by: **Gabrielle Ross**
 ### Last updated: **2/19/2024**
