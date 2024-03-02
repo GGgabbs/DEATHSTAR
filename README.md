@@ -11,6 +11,8 @@ Please see this **Google Doc** for the most up-to-date documentation: **[https:/
 
 Please **cite our paper** if you use this code: **[https://ui.adsabs.harvard.edu/abs/2023MNRAS.tmp.3722R/abstract](https://ui.adsabs.harvard.edu/abs/2023MNRAS.tmp.3722R/abstract)**
 
+For more information, watch the **MIT TESS Science Talk (2/28/2024)** presentation on how to install: **[https://drive.google.com/file/d/1wbOvqsq7TivGIP5u1Gy6pFxRD5siPw-C/view?usp=sharing](https://drive.google.com/file/d/1wbOvqsq7TivGIP5u1Gy6pFxRD5siPw-C/view?usp=sharing)**
+
 
 ---
 
