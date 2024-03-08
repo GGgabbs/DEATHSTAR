@@ -38,12 +38,13 @@ For more information, watch the **MIT TESS Science Talk (2/28/2024)** presentati
      Open your **Anaconda Prompt** (for Windows) or **Terminal** (for Mac). This is important because this is what has conda installed
      Type in and run `conda create -n DEATHSTAR python=3.9.15 numpy matplotlib scipy` in your Anaconda Prompt/ Terminal to create the environment
      Activate the DEATHSTAR environment using `conda activate DEATHSTAR`
+
      **Install dependencies** using `pip install ztfquery` and then subsequently `pip3 install pandas astropy astroquery photutils pyastronomy fpdf ipython notebook`
      If your program uses **additional dependencies**, use `pip3 install [PACKAGE NAME]` to install them
-5. Logins and accounts for datasets:
+6. Logins and accounts for datasets:
 
      **[Zwicky Transient Facility (ZTF)](https://irsa.ipac.caltech.edu/frontpage/)** login: in order to retrieve ZTF data, you need a login on their website (you only need to input your username and password the first time you run the code)
-6. Opening DEATHSTAR:
+7. Opening DEATHSTAR:
 
      Navigate to the DEATHSTAR project folder (wherever you have extracted it) within your anaconda prompt using `cd [FOLDER NAME]` and replace `[FOLDER NAME]` with your own directory name
      Test package installation with the download program `Test.py` using `python Test.py` OR `python3 Test.py`
