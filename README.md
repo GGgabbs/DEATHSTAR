@@ -40,6 +40,7 @@ For more information, watch the **MIT TESS Science Talk (2/28/2024)** presentati
      Activate the DEATHSTAR environment using `conda activate DEATHSTAR`
 
      **Install dependencies** using `pip install ztfquery` and then subsequently `pip3 install pandas astropy astroquery photutils pyastronomy fpdf ipython notebook`
+
      If your program uses **additional dependencies**, use `pip3 install [PACKAGE NAME]` to install them
 6. Logins and accounts for datasets:
 
